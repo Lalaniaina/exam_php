@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>1.5</title>
+    <?php
+        include("config.php");
+    ?>
+</head>
+<body>
+        <form action="form.php" method="GET">
+            <div>
+                <label for="">Nom:</label></br>
+                <input type="text" name="nom" required></br>
+                <label for="">Prenom:</label></br>
+                <input type="text" name="prenom" required></br>
+                    <p>Sexe:</p>
+                    <input type="radio" name="sexe">
+                    <label for="">Male</label>
+                    <input type="radio" name="sexe">
+                    <label for="">Femelle</label>
+                </div>
+            </div>
+            <div>
+                <label for="">Choix de vins:</label></br>
+                <select id="vins" name="vins">
+                    <option value="tana">Tana</option>
+                    <option value="antsirabe">Antsirabe</option>
+                    <option value="tamatave">Tamatave</option>
+                </select></br>
+                <input type="submit" name="submit" value="Sauvegarder">
+            </div>
+                
+            
+        </form>
+</body>
+</html>
